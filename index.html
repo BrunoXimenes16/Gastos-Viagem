@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de gastos na viagem.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de gasto total na viagem</h1>
+            <p>Informe a distância da viagem (em km), o consumo do veículo (km/l) e o preço do combustível (por litro).</p>
+        </header>
+        
+        <main>
+            <form action="control.php" method="POST" class="formulario">
+                <div class="input-container">
+                    <label for="distancia">Distancia Total (km): </label>
+                    <input type="number" id="distancia" name="distancia" required placeholder="Digite a distancia total">
+                </div>
+                
+                <div class="input-container">
+                    <label for="consumo">Consumo do veiculo (km/l): </label>
+                    <input type="number" id="consumo" name="consumo" required placeholder="Digite o consumo do veiculo">
+                </div>
+
+                <div class="input-container">
+                    <label for="preco_combustivel">Preço do combustivel (l): </label>
+                    <input type="number" id="preco_combustivel" name="preco_combustivel" required placeholder="Digite o preço do combustivel">
+                </div>
+                
+                <div class="input-container">
+                    <input type="submit" value="Calcular Custo" class="btn-calcular">
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
